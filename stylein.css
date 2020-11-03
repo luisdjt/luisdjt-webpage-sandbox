@@ -1,8 +1,19 @@
 body {
-  background: #ffffff;
+  background: repeating-linear-gradient(
+    -75deg,
+    #fff 0px,
+    #fff 5px,
+    rgb(250, 250, 250) 1px,
+    rgb(250, 250, 250) 1px,
+    #fff 12px
+  );
+
   font-family: "proxima-nova", sans-serif;
   padding: 0;
   margin: 0;
+}
+h1 {
+  text-align: center;
 }
 
 .btns {
@@ -17,13 +28,14 @@ body {
 }
 .btns .btn {
   text-decoration: none;
-  background: #4f1e39;
+  background: #4fc5d6;
   width: 26%;
   min-width: 70px;
   max-width: 100px;
   color: #ffffff;
-  padding: 4px 0px;
-  margin: 4px 0;
+  padding: 8px 0px;
+  /* margin: 4px 0;*/
+  font-weight: bold;
 }
 .btns .btn:hover,
 .btns .current {
@@ -33,8 +45,8 @@ body {
   min-width: 70px;
   max-width: 100px;
   color: #4f1e39;
-  padding: 4px 0px;
-  margin: 4px 0;
+  padding: 8px 0px;
+  /*margin: 4px 0;*/
   font-weight: bold;
 }
 
@@ -68,6 +80,51 @@ body {
   max-height: 100%;
   padding: 1px 4px;
 }
-.thatbox .worksc {
+.thatbox {
   width: 100%;
+}
+.cate-cont {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 250px;
+  max-width: 1920px;
+  height: 250px;
+  margin: auto;
+}
+.cate-cont .gallery-door-round {
+  width: 29vw;
+  height: 29vw;
+  min-width: 125px;
+  min-height: 125px;
+  max-width: 350px;
+  max-height: 350px;
+  /*  position: relative;*/
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 4% 2%;
+  transition: transform 0.5s;
+}
+
+.cate-cont .gallery-door-round .img-gallery-door {
+  width: auto;
+  height: 100%;
+  margin-left: 15%;
+}
+
+.illustration {
+  background: #4fc5d6;
+}
+
+.logotypes {
+  background: #a90000;
+}
+
+.other {
+  background: #4f1e39;
+}
+
+.cate-cont .gallery-door-round:hover {
+  transform: scale(1.1);
 }
