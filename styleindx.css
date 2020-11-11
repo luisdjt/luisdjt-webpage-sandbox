@@ -12,7 +12,7 @@ body {
   min-width: 193px;
 }
 .prof {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   line-height: 1;
   color: #4f1e39;
@@ -26,18 +26,26 @@ body {
   max-width: 100px;
   color: #ffffff;
   padding: 5px 0px;
+  margin: 0 7px;
   margin-top: 5%;
+  border-radius: 25px;
+  transition: background-color 0.8s;
 }
 .btns {
   margin: 50px auto;
   width: 38%;
-  max-width: 700px;
-  min-width: 60px;
+  max-width: 400px;
   justify-content: space-around;
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  /*   border: solid 2px black; */
+  /*border: solid 2px black;*/
+}
+@media screen and (max-width: 600px) {
+  .btns {
+    flex-direction: column;
+    min-width: 80px;
+    align-items: center;
+  }
 }
 
 .btns .btn:hover {
